@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Word Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="openModal" class="ref-btn">Periodic Table Reference</button>
+
+    <div class="container">
+        <h1>Breaking Words</h1>
+        <p>Click elements or type to build your word!</p>
+        
+        <div class="input-group">
+            <input type="text" id="wordInput" placeholder="Enter text..." autocomplete="off">
+            <button id="clearBtn" class="clear-btn">Clear</button>
+        </div>
+
+        <div id="result-container"></div>
+    </div>
+
+    <div id="tableModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <h2>Periodic Table of Elements</h2>
+            <p style="font-size: 0.8rem; color: #888; margin-bottom: 10px;">Click an element to add it to your word</p>
+            <div id="periodic-grid" class="periodic-grid"></div>
+        </div>
+    </div>
+
+    <script src="elements.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
